@@ -1,13 +1,13 @@
 /* SETTINGS START */
-const prefix = "!"
-const groupID = 123123;
+const prefix = "-"
+const groupID = 2962857;
 const bot_token = process.env.botToken;
 const rblxCookie = process.env.rblxCookie;
 const officerRoleE = "Officer";
 const welcomeMessage = "Welcome!";
 const maxXP = 10;
-const xpAuditLogChannelID = "123123";
-const mainChatChannelID = "123123";
+const xpAuditLogChannelID = "708017150165778504";
+const mainChatChannelID = "708017444660183061";
 const fireBaseURL = process.env.fireBaseURL;
 /* SETTINGS END */
 
@@ -33,8 +33,8 @@ firebase.initializeApp(firebaseConfig)
 
 bot.on('ready', () => {
   console.log('Turned on Discord bot');
-  bot.user.setActivity(`${bot.users.size} comrades!`, { type: 'WATCHING' });
-  bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`**Resuming processes!** :wave:`)
+  bot.user.setActivity(`${bot.users.size} comrades!`, { type: 'COVERING' });
+  bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`**Getting Data...! Ready to promote Icarians!**`)
 })
 
 bot.on('message', async message => {
@@ -589,3 +589,4 @@ bot.on('message', async message => {
 
 
 bot.login(bot_token)
+   
